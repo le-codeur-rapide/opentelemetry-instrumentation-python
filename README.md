@@ -42,3 +42,5 @@ Using this module, we can register a callback that will be called when a functio
 We can also register a callback that will be called when a function is returned, and that would end the span.
 
 When implementing these callbacks, we can also get the args and the return value of the function call and add them to the span.
+
+See [examples/basic_example.py](examples/basic_example.py) for an example.

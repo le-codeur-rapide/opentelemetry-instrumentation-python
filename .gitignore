@@ -1,1 +1,3 @@
 signoz/
+dist/
+otel_pyautoinstrumentor.egg-info/

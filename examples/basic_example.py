@@ -8,9 +8,9 @@ from opentelemetry import trace
 from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter
 from opentelemetry.sdk.trace.export import BatchSpanProcessor
 from opentelemetry.sdk.trace import TracerProvider
-from src.sysmon_autoinstumentor import SysmonAutoInstrumentor
 
 # setup signoz exporter
+from otel_pyautoinstrumentor import SysmonAutoInstrumentor
 trace.set_tracer_provider(TracerProvider())
 tracer = trace.get_tracer(__name__)
 otlp_exporter = OTLPSpanExporter(
